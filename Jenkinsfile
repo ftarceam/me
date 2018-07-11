@@ -11,5 +11,10 @@ pipeline {
         sh 'npm run build'
       }
     }
+    stage('Test') {
+      steps {
+        echo 'Esto es una prueba'
+      }
+    }
   }
 }
