@@ -16,5 +16,11 @@ pipeline {
         echo 'Esto es una prueba'
       }
     }
+    stage('Test2') {
+      steps {
+        sh 'npm run test'
+        sh 'npm run test'
+      }
+    }
   }
 }
